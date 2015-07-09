@@ -1,0 +1,42 @@
+body {
+    background: #1F1F1F;
+    color: #888;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+}
+
+body > .container {
+    margin-top: 60px;
+    background: #2C2827;
+}
+
+.d-nav {
+    background-color: #1A1A17;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.d-nav > .container {
+    padding: 0;
+}
+
+.d-nav-fix-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
