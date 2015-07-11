@@ -6,26 +6,166 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/dark-theme.css">
 </head>
 <body>
     <nav class="d-nav d-nav-fix-top">
         <div class="container">
-            inspire
+            <div class="d-nav-head">
+                <div class="d-nav-brand">
+                    <h1>Inspirer</h1>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="container">
         <div class="row d-recommend">
             <div class="col-md-8">
                 <article>
-                    <h1>首页推荐博客文章 Recommend</h1>
-                    <div class="d-description">
-                        推荐文章内容摘要 Description
+                    <div class="d-c-header">
+                        <div class="d-c-title"><a href="#">首页推荐博客文章 Recommend</a></div>
+                        <div class="d-c-info">
+                            <span><i class="fa fa-leaf"></i> 分类名称</span>
+                            <span><i class="fa fa-tag"></i> 标签名称</span>
+                        </div>
                     </div>
+                    <div class="d-c-body">
+                        <p>推荐文章内容摘要 Description，在此处显示文章摘要数据</p>
+                    </div>
+                    <a class="btn btn-write-border pull-right">Read more</a>
                 </article>
             </div>
             <div class="col-md-4">
-                <div style="background: rgba(255, 255, 255, 0.7); height: 200px; width: 100%"></div>
+                <ul class="d-recommend-more">
+                    <li>
+                        <a href="#">
+                            <strong>Home 页面推荐文章标题</strong>
+                            <p>推荐文章内容摘要数据，该段文字较短</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>Home 页面推荐文章标题</strong>
+                            <p>推荐文章内容摘要数据，该段文字较短，此段内容检测溢出</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <strong>Home 页面推荐文章标题</strong>
+                            <p>推荐文章内容摘要数据，该段文字较短</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row d-main">
+            <div class="col-md-9">
+                <nav class="d-col-nav">
+                </nav>
+                <div class="c-post-container">
+                    <article class="d-post">
+                        <div class="d-post-header">
+                            <div class="d-post-title"><a href="#">文章标题 Post title</a></div>
+                            <div class="d-post-info">
+                                <span><i class="fa fa-clock-o"></i> <time>7/10/2015</time></span>
+                                <span><i class="fa fa-leaf"></i> <a href="#">Laravel 学习笔记</a> </span>
+                                <span><i class="fa fa-tags"></i> <a href="#">Laravel</a>, <a href="#">笔记</a>, <a href="#">PHP</a></span>
+                            </div>
+                        </div>
+                        <div class="d-post-body">
+                            容器，字面上理解就是装东西的东西。常见的变量、对象属性等都可以算是容器。一个容器能够装什么，全部取决于你对该容器的定义。当然，有这样一种容器，它存放的不是文本、数值，而是对象、对象的描述（类、接口）或者是提供对象的回调，通过这种容器，我们得以实现许多高级的功能，其中最常提到的，就是 “解耦” 、“依赖注入（DI）”。本文就从这里开始
+                        </div>
+                        <a class="btn btn-write-border pull-right">Read more</a>
+                    </article>
+                    <article class="d-post">
+                        <div class="d-post-header">
+                            <div class="d-post-title"><a href="#">文章标题 Post title</a></div>
+                            <div class="d-post-info">
+                                <span><i class="fa fa-clock-o"></i> <time>7/10/2015</time></span>
+                                <span><i class="fa fa-leaf"></i> <a href="#">Laravel 学习笔记</a> </span>
+                                <span><i class="fa fa-tags"></i> <a href="#">Laravel</a>, <a href="#">笔记</a>, <a href="#">PHP</a></span>
+                            </div>
+                        </div>
+                        <div class="d-post-body">
+                            容器，字面上理解就是装东西的东西。常见的变量、对象属性等都可以算是容器。一个容器能够装什么，全部取决于你对该容器的定义。当然，有这样一种容器，它存放的不是文本、数值，而是对象、对象的描述（类、接口）或者是提供对象的回调，通过这种容器，我们得以实现许多高级的功能，其中最常提到的，就是 “解耦” 、“依赖注入（DI）”。本文就从这里开始
+                        </div>
+                        <a class="btn btn-write-border pull-right">Read more</a>
+                    </article>
+                    <article class="d-post">
+                        <div class="d-post-header">
+                            <div class="d-post-title"><a href="#">文章标题 Post title</a></div>
+                            <div class="d-post-info">
+                                <span><i class="fa fa-clock-o"></i> <time>7/10/2015</time></span>
+                                <span><i class="fa fa-leaf"></i> <a href="#">Laravel 学习笔记</a> </span>
+                                <span><i class="fa fa-tags"></i> <a href="#">Laravel</a>, <a href="#">笔记</a>, <a href="#">PHP</a></span>
+                            </div>
+                        </div>
+                        <div class="d-post-body">
+                            容器，字面上理解就是装东西的东西。常见的变量、对象属性等都可以算是容器。一个容器能够装什么，全部取决于你对该容器的定义。当然，有这样一种容器，它存放的不是文本、数值，而是对象、对象的描述（类、接口）或者是提供对象的回调，通过这种容器，我们得以实现许多高级的功能，其中最常提到的，就是 “解耦” 、“依赖注入（DI）”。本文就从这里开始
+                        </div>
+                        <a class="btn btn-write-border pull-right">Read more</a>
+                    </article>
+                </div>
+            </div>
+            <div class="col-md-3 hidden-xs hidden-sm">
+                <div class="d-site-column-container">
+                    <div class="d-site-column">
+                        <div class="d-c-header">
+                            <div class="d-c-title">文章分类/栏目</div>
+                        </div>
+                        <div class="d-c-body">
+                            <ul id="category-list" class="d-site-column-list">
+                                <li><a href="#"><strong>Laravel 笔记</strong></a> <span class="badge">27</span></li>
+                                <li><a href="#"><strong>PHP 开发基础</strong></a> <span class="badge">13</span></li>
+                                <li><a href="#"><strong>生活记录</strong></a> <span class="badge">4</span></li>
+                                <li><a href="#"><strong>Linux 系统运维</strong></a> <span class="badge">102</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-site-column">
+                        <div class="d-c-header">
+                            <div class="d-c-title">标签</div>
+                        </div>
+                        <div class="d-c-body">
+                            <ul id="tag-list" class="d-site-column-list d-site-column-list-inline">
+                                <li><a href="#"><strong>笔记</strong></a> <span class="badge">27</span></li>
+                                <li><a href="#"><strong>PHP</strong></a> <span class="badge">13</span></li>
+                                <li><a href="#"><strong>生活记录</strong></a> <span class="badge">4</span></li>
+                                <li><a href="#"><strong>Linux</strong></a> <span class="badge">6</span></li>
+                                <li><a href="#"><strong>laravel</strong></a> <span class="badge">40</span></li>
+                                <li><a href="#"><strong>后端框架</strong></a> <span class="badge">8</span></li>
+                                <li><a href="#"><strong>感问</strong></a> <span class="badge">9</span></li>
+                                <li><a href="#"><strong>运维</strong></a> <span class="badge">4</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-site-column">
+                        <div class="d-c-header">
+                            <div class="d-c-title">归档</div>
+                        </div>
+                        <div class="d-c-body">
+                            <ul id="archive-list" class="d-site-column-list">
+                                <li><a href="#">2015 年 1 月</a></li>
+                                <li><a href="#">2015 年 2 月</a></li>
+                                <li><a href="#">2015 年 3 月</a></li>
+                                <li><a href="#">2015 年 4 月</a></li>
+                                <li><a href="#">2015 年 5 月</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-site-column">
+                        <div class="d-c-header">
+                            <div class="d-c-title">友情链接</div>
+                        </div>
+                        <div class="d-c-body">
+                            <ul id="blogroll-list" class="d-site-column-list d-site-column-list-inline">
+                                <li><a href="#">友链站点 A</a></li>
+                                <li><a href="#">友链站点 B</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
