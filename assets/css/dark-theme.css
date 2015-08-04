@@ -57,6 +57,48 @@ a:active, a:focus, a:visited {
     color: #ececec;
 }
 
+.pagination>li>a, .pagination>li>span {
+    background: transparent;
+    border-color: #888;
+    font-size: 14px;
+    color: #888;
+}
+
+.pagination>li>a:hover {
+    background-color: #337ab7;
+}
+
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+    border-color: #888;
+    background-color: #3c3c3c;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+
+.pager li > a, .pager li > span {
+    background-color: transparent;
+    color: #888;
+    border: 0;
+}
+
+.pager li.disabled > a, .pager li.disabled > span {
+    background: transparent;
+    color: #666;
+}
+
+.pager li > a:hover {
+    background-color: #337ab7;
+}
+
+.pager li.disabled > a:hover {
+    background: transparent;
+    color: #3c3c3c!important;
+    text-shadow: none;
+}
+
 body > .container {
     padding-top: 55px;
     background: #2C2827;
@@ -65,6 +107,7 @@ body > .container {
 .d-recommend {
     padding-bottom: 15px;
     border-bottom: solid 1px #3c3c3c;
+    margin-bottom: 15px;
 }
 
 .d-recommend article {
@@ -149,14 +192,73 @@ body > .container {
     text-shadow: none;
 }
 
+.d-recommend-more .label {
+    font-weight: normal;
+    vertical-align: middle;
+    float: left;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
 .d-main {
-    margin: 15px -15px;
+    margin: 0 -15px 15px -15px;
+}
+
+ul.d-post-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.d-post-container > li {
+    border-top: solid 1px #3c3c3c;
+    padding: 8px 0;
+}
+
+ul.d-post-container > li:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+ul.d-post-container > li > .d-post-header > .d-post-info {
+    font-size: 16px;
+    color: #e5e5e5;
+}
+
+ul.d-post-container > li > .d-post-header > .d-post-info > span:first-child {
+    margin: 0;
+}
+
+ul.d-post-container > li > .d-post-header > .d-post-info > span {
+    margin-left: 20px;
+}
+
+ul.d-post-container > li > .d-post-header > .d-post-info a {
+    color: #e5e5e5;
+}
+
+ul.d-post-container > li > .d-post-header > .d-post-title > a {
+    font-family: 'agency_fbregular', '楷体';
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+ul.d-post-container > li > .d-post-header > .d-post-title > span.label {
+    vertical-align: middle;
+    font-weight: normal;
 }
 
 .d-post {
-    margin: 15px -15px 0 -15px;
+    margin: 0 -15px;
     box-sizing: border-box;
-    border-bottom: solid 1px #3c3c3c;
+    border-top: solid 1px #3c3c3c;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.d-post:first-child {
+    padding-top: 0;
+    border-top: none;
 }
 
 .d-post:after {
@@ -168,6 +270,7 @@ body > .container {
 .d-post > .d-post-header {
     position: relative;
     margin-bottom: 15px;
+    vertical-align:middle;
 }
 
 .d-post > .d-post-header > .d-post-title {
@@ -176,6 +279,7 @@ body > .container {
     border-left: solid 5px #888;
     padding: 0 15px 0 10px;
     margin-bottom: 10px;
+    color: #4183c4;
 }
 
 .d-post > .d-post-header > .d-post-info {
@@ -205,6 +309,12 @@ body > .container {
 
 .d-post > .btn-write-border {
     margin-right: 15px;
+}
+
+.d-post-notice {
+    background-color: #3c3c3c;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .d-site-column-container {
@@ -278,13 +388,49 @@ body > .container {
     font-weight: normal;
 }
 
+.d-error {
+    text-align: center;
+}
+
+.d-error h2 {
+    font-size: 32px;
+}
+
+.d-error p {
+    font-size: 48px;
+}
+
 #category-list > li > .badge, #tag-list > li > .badge {
     font-weight: normal;
     background: #265780;
     border-radius: 8px;
 }
 
+#record-number {
+    padding: 15px 0;
+}
+
 .d-site-column-list-inline > li {
     display: inline-block;
     margin-right: 8px;
+}
+
+.d-site-column-list > li span, .d-site-column-list > li a {
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    font-size: 16px;
+    border-top: solid 1px #3c3c3c;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    line-height: 24px;
+}
+
+footer a {
+    color: #888!important;
 }
