@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Blog - Home</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="assets/amazeui/dist/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/theme/dark/theme.css">
+    <link rel="stylesheet" href="assets/theme/dark/prettify-theme.css">
+</head>
+<body>
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top am-kai">
+    <div class="am-container">
+        <h1 class="am-topbar-brand">
+            <a href="#">Inspirer</a>
+        </h1>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li class="am-active"><a href="#">首页</a></li>
+                <li><a href="#">项目</a></li>
+            </ul>
+
+            <form class="am-topbar-form am-topbar-right am-form-inline" role="search">
+                <div class="am-form-group">
+                    <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+                </div>
+                <button class="am-btn am-btn-sm  am-btn-success am-topbar-btn">search</button>
+            </form>
+        </div>
+    </div>
+</header>
+<div class="am-container insp-d-body am-kai">
+    <!--  面包屑导航 -->
+    <nav>
+        <ol class="am-breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">分类</a></li>
+            <li class="am-active">内容</li>
+        </ol>
+    </nav>
+
+    <!-- 最新最热文章聚合展示区 -->
+    <div class="am-g">
+        <!-- 文章列表区 -->
+        <div class="am-u-md-8">
+            <article class="insp-d-article">
+                <header>
+                    <h1 class="insp-d-title">CentOS 下编译安装 Nginx 1.8.0 和 PHP 5.6.8</h1>
+                    <div class="insp-d-article-info">
+                        <span class="insp-d-meta"><time class="am-icon-calendar" datetime="2015-5-31T00:56" pubdate> 2015-5-31 00:56</time></span>
+                        <span class="insp-d-meta">来自于分类 <a href="#">笔记</a></span>
+                    </div>
+                </header>
+                <div>
+                    <p>说来惭愧，这么久还没有体验一下 Nginx 。今天说什么也要尝试一下对吧？我就先从我个人常用的 web 服务器来渐渐熟悉 Nginx。</p>
+                    <h2>准备</h2>
+                    <blockquote>
+                        <p><em>本文系统环境为 CentOS 6.6，在其他发行版本的 linux 下编译安装方法基本相同，仅需注意安装过程中所需的依赖库是否被安装，若没有安装可自行查阅相关依赖的安装方式。</em></p>
+                        <p>安装 php 5.6.8 的方法及过程请参考该文章 <a href="https://www.insp.top/compile-and-install-apache24-and-php56-on-centos" title="《Linux 下 编译安装 Apache 2.4 和 php 5.6》">《Linux 下 编译安装 Apache 2.4 和 php 5.6》</a>，务必注意根据个人需要替换文中的可选项。</p>
+                    </blockquote>
+                    <p>我们先下载必要的组件：
+                        PCRE-8.36 （<a href="http://jaist.dl.sourceforge.net/project/pcre/pcre/8.36/pcre-8.36.tar.gz" title="http://jaist.dl.sourceforge.net/project/pcre/pcre/8.36/pcre-8.36.tar.gz"><a href="http://jaist.dl.sourceforge.net/project/pcre/pcre/8.36/pcre-8.36.tar.gz">http://jaist.dl.sourceforge.net/project/pcre/pcre/8.36/pcre-8.36.tar.gz</a></a>）
+                        Nginx （<a href="http://nginx.org/download/nginx-1.8.0.tar.gz" title="http://nginx.org/download/nginx-1.8.0.tar.gz"><a href="http://nginx.org/download/nginx-1.8.0.tar.gz">http://nginx.org/download/nginx-1.8.0.tar.gz</a></a>）</p>
+                    <p id="page-break-anchor"></p>
+                    <h2>编译与安装</h2>
+                    <h3>1. PCRE 的安装</h3>
+                    <pre>
+                        <code>tar -zxvf pcre-8.36.tar.gz
+cd pcre-8.36
+./configure
+make &amp;&amp; make install</code>
+                    </pre>
+                    <h3>2. Nginx 的安装</h3>
+                    <pre>
+                        <code>tar -zxvf nginx-1.8.0.tar.gz
+cd nginx-1.8.0
+./configure --prefix=/usr/local/nginx
+make &amp;&amp; make install</code>
+                    </pre>
+                </div>
+                <footer>
+                    <div class="insp-d-article-footer-notice-list">
+                        <div class="insp-d-article-notice">
+                            <p><strong>声明</strong></p>
+                            <p>在转载或修改本文后发布的文章中注明原文来源信息的前提下，本文作者许可在未告知作者的情况下进行转载该篇文章或经修改后发布。</p>
+                        </div>
+                    </div>
+                    <ul class="am-pagination">
+                        <li><a href="" class="am-icon-angle-double-up am-block"> 上一篇：PHP 知识补全 —— 生成器 （generator）和协程的实现</a></li>
+                        <li><a href="" class="am-icon-angle-double-down am-block"> 下一篇：推荐书籍——《PHP扩展开发及内核应用》</a></li>
+                    </ul>
+                    <!-- 多说评论框 start -->
+                    <div class="ds-thread" data-thread-key="18" data-title="laravel 学习笔记 &mdash;&mdash; 神奇的服务容器" data-url="https://www.insp.top/article/18"></div>
+                    <!-- 多说评论框 end -->
+                    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                    <script type="text/javascript">
+                        var duoshuoQuery = {short_name:"insp"};
+                        (function() {
+                            var ds = document.createElement('script');
+                            ds.type = 'text/javascript';ds.async = true;
+                            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                            ds.charset = 'UTF-8';
+                            (document.getElementsByTagName('head')[0]
+                            || document.getElementsByTagName('body')[0]).appendChild(ds);
+                        })();
+                    </script>
+                    <!-- 多说公共JS代码 end -->
+                </footer>
+            </article>
+        </div>
+        <!-- 左边栏 -->
+        <div class="am-u-md-4">
+            <div class="insp-d-column">
+                <div class="insp-d-header">
+                    <div class="insp-d-title">标签</div>
+                </div>
+                <div class="insp-d-body">
+                    <ul class="insp-d-column-list insp-d-column-list-inline">
+                        <li><a href="#">笔记</a> <span class="am-badge am-round">27</span></li>
+                        <li><a href="#">PHP</a> <span class="am-badge am-round">13</span></li>
+                        <li><a href="#">生活记录</a> <span class="am-badge am-round">4</span></li>
+                        <li><a href="#">Linux</a> <span class="am-badge am-round">6</span></li>
+                        <li><a href="#">laravel</a> <span class="am-badge am-round">40</span></li>
+                        <li><a href="#">后端框架</a> <span class="am-badge am-round">8</span></li>
+                        <li><a href="#">感问</a> <span class="am-badge am-round">9</span></li>
+                        <li><a href="#">运维</a> <span class="am-badge am-round">4</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="insp-d-column">
+                <div class="insp-d-header">
+                    <div class="insp-d-title">归档</div>
+                </div>
+                <div class="insp-d-body">
+                    <ul class="insp-d-column-list">
+                        <li><a href="#">2015 年 5 月</a></li>
+                        <li><a href="#">2015 年 4 月</a></li>
+                        <li><a href="#">2015 年 3 月</a></li>
+                        <li><a href="#">2015 年 2 月</a></li>
+                        <li><a href="#">2015 年 1 月</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="insp-d-column">
+                <div class="insp-d-header">
+                    <div class="insp-d-title">友情链接</div>
+                </div>
+                <div class="insp-d-body">
+                    <ul class="insp-d-column-list insp-d-column-list-inline">
+                        <li><a href="#">友链站点 A</a></li>
+                        <li><a href="#">友链站点 B</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="am-kai insp-d-footer">
+    <div class="am-g am-g-fixed">
+        <p>灵感，来自生活的馈赠</p>
+        <p>Recorded from life's inspirations</p>
+        <p>Powered by XOPNS·Database - WebsiteDeveloper</p>
+        <p id="record-number"><a href="http://www.miitbeian.gov.cn/">渝ICP备15005301号</a></p>
+    </div>
+</footer>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/jquery/dist/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/amazeui/dist/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/amazeui/dist/js/amazeui.min.js"></script>
+<script src="assets/google-code-prettify/bin/prettify.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('pre').text(function(i, v) {
+            $(this).attr('class', 'prettyprint linenums');
+            return $(this).children('code').text();
+        });
+        prettyPrint();
+    });
+</script>
+</body>
+</html>

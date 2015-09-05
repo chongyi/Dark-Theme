@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Blog - Home</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="stylesheet" href="assets/amazeui/dist/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/theme/dark/theme.css">
+</head>
+<body>
+<header class="am-topbar am-topbar-inverse am-topbar-fixed-top am-kai">
+    <div class="am-container">
+        <h1 class="am-topbar-brand">
+            <a href="#">Inspirer</a>
+        </h1>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li class="am-active"><a href="#">首页</a></li>
+                <li><a href="#">项目</a></li>
+            </ul>
+
+            <form class="am-topbar-form am-topbar-right am-form-inline" role="search">
+                <div class="am-form-group">
+                    <input type="text" class="am-form-field am-input-sm" placeholder="搜索">
+                </div>
+                <button class="am-btn am-btn-sm  am-btn-success am-topbar-btn">search</button>
+            </form>
+        </div>
+    </div>
+</header>
+<div class="am-container insp-d-body am-kai">
+    <!--  面包屑导航 -->
+    <nav>
+        <ol class="am-breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">分类</a></li>
+            <li class="am-active">内容</li>
+        </ol>
+    </nav>
+
+    <!-- 最新最热文章聚合展示区 -->
+    <div class="am-g">
+        <!-- 文章列表区 -->
+        <div class="am-u-md-8">
+            <section class="insp-d-article-list">
+                <h1>文章列表</h1>
+                <div class="insp-d-article-list-body">
+                    <article>
+                        <header>
+                            <h1><a href="#">laravel 学习笔记 —— 神奇的服务容器</a></h1>
+                            <div class="insp-d-article-info">
+                                <span class="insp-d-meta"><time class="am-icon-calendar" datetime="2015-5-31T00:56" pubdate> 2015-5-31 00:56</time></span>
+                                <span class="insp-d-meta">来自于分类 <a href="#">笔记</a></span>
+                            </div>
+                        </header>
+                        <div class="insp-d-article-body">
+                            <blockquote>
+                                <p>容器，字面上理解就是装东西的东西。常见的变量、对象属性等都可以算是容器。一个容器能够装什么，全部取决于你对该容器的定义。当然，有这样一种容器，它存放的不是文本、数值，而是对象、对象的描述（类、接口）或者是提供对象的回调，通过这种容器，我们得以实现许多高级的功能，其中最常提到的，就是 “解耦” 、“依赖注入（DI）”。本文就从这里开始。</p>
+                            </blockquote>
+                            <h2>IoC 容器， laravel 的核心</h2>
+                            <p>Laravel 的核心就是一个 <code>IoC 容器</code>，根据文档，称其为“<code>服务容器</code>”，顾名思义，该容器提供了整个框架中需要的一系列服务。作为初学者，很多人会在这一个概念上犯难，因此，我打算从一些基础的内容开始讲解，通过理解面向对象开发中依赖的产生和解决方法，来逐渐揭开“依赖注入”的面纱，逐渐理解这一神奇的设计理念。</p>
+                        </div>
+                        <footer class="am-text-right">
+                            <a href="#">【点击阅读全文】</a>
+                        </footer>
+                    </article>
+                    <article>
+                        <header>
+                            <h1><a href="#">推荐书籍——《PHP扩展开发及内核应用》</a></h1>
+                            <div class="insp-d-article-info">
+                                <span class="insp-d-meta"><time class="am-icon-calendar" datetime="2015-5-31T00:56" pubdate> 2015-5-31 00:56</time></span>
+                                <span class="insp-d-meta">来自于分类 <a href="#">笔记</a></span>
+                            </div>
+                        </header>
+                        <div class="insp-d-article-body">
+                            <p>先说说为什么突然推荐这本书的原因。</p>
+                            <blockquote>
+                                <p>由于需要为某一个项目写一个特别的脚本解析器（或者说一个特殊的类似正则引擎的东西），而恰好这个玩意儿需要和 PHP 结合起来。这时候效率又有一定需求，尤其是在解析脚本的时候，其余则没有太多效率要求。</p>
+                                <p>由于其他语言本人不是很拿手，于是打算干脆写个扩展，用 C 写编译器还是蛮合适。但对于用 C 写 PHP 的扩展还是第一次，于是计划好好在近期研究一下这个东西。正恰好在 github 上搜到了相关书目的电子翻译档。原来鸟哥也参与了，于是满怀欣喜，将此书推荐给同样想要开发扩展的朋友。</p>
+                            </blockquote>
+                            <p>github 地址：<a href="https://github.com/walu/phpbook" title="https://github.com/walu/phpbook"></a><a href="https://github.com/walu/phpbook">https://github.com/walu/phpbook</a></p>
+                            <p>直接阅读地址：<a href="http://www.walu.cc/phpbook"></a><a href="http://www.walu.cc/phpbook">http://www.walu.cc/phpbook</a></p>
+                        </div>
+                        <footer class="am-text-right">
+                            <a href="#">【点击阅读全文】</a>
+                        </footer>
+                    </article>
+                    <article>
+                        <header>
+                            <h1><a href="#">使用 git subtree 集成项目到子目录</a></h1>
+                            <div class="insp-d-article-info">
+                                <span class="insp-d-meta"><time class="am-icon-calendar" datetime="2015-5-31T00:56" pubdate> 2015-5-31 00:56</time></span>
+                                <span class="insp-d-meta">来自于分类 <a href="#">笔记</a></span>
+                            </div>
+                        </header>
+                        <div class="insp-d-article-body">
+                            <blockquote>
+                                <p>本文转载自 <a href="http://aoxuis.me/post/2013-08-06-git-subtree" title="http://aoxuis.me/post/2013-08-06-git-subtree"></a><a href="http://aoxuis.me/post/2013-08-06-git-subtree">http://aoxuis.me/post/2013-08-06-git-subtree</a></p>
+                            </blockquote>
+                            <h2>使用场景</h2>
+                            <p>例如，在项目 Game 中有一个子目录 AI。Game 和 AI 分别是一个独立的 git 项目，可以分开维护。为了避免直接复制粘贴代码，我们希望 Game 中的 AI 子目录与 AI 的 git 项目关联，有 3 层意思：</p>
+                            <ol>
+                                <li>AI 子目录使用 AI 的 git 项目来填充，内容保持一致。</li>
+                                <li>当 AI 的 git 项目代码有更新，可以拉取更新到 Game 项目的 AI 子目录来。</li>
+                                <li>反过来，当 Game 项目的 AI 子目录有变更，还可以推送这些变更到 AI 的 git 项目。</li>
+                            </ol>
+                            <p>用 git subtree 可以轻松满足上面的需求。</p>
+                        </div>
+                        <footer class="am-text-right">
+                            <a href="#">【点击阅读全文】</a>
+                        </footer>
+                    </article>
+                </div>
+                <ul class="am-pagination insp-d-article-list-pagination">
+                    <li class="am-disabled"><a href="#">&laquo;</a></li>
+                    <li class="am-active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </section>
+        </div>
+        <!-- 左边栏 -->
+        <div class="am-u-md-4">
+            <div class="insp-d-column">
+                <div class="insp-d-header">
+                    <div class="insp-d-title insp-d-title-orange">笔记</div>
+                </div>
+                <div class="insp-d-body">
+                    <p>
+                        学习笔记，各种杂七杂八的学习笔记。记录着各类小知识，不一定很高大上，但都是给自己提供了帮助的知识。
+                    </p>
+                </div>
+            </div>
+            <div class="insp-d-column">
+                <div class="insp-d-header">
+                    <div class="insp-d-title">标签</div>
+                </div>
+                <div class="insp-d-body">
+                    <ul class="insp-d-column-list insp-d-column-list-inline">
+                        <li><a href="#">笔记</a> <span class="am-badge am-round">27</span></li>
+                        <li><a href="#">PHP</a> <span class="am-badge am-round">13</span></li>
+                        <li><a href="#">生活记录</a> <span class="am-badge am-round">4</span></li>
+                        <li><a href="#">Linux</a> <span class="am-badge am-round">6</span></li>
+                        <li><a href="#">laravel</a> <span class="am-badge am-round">40</span></li>
+                        <li><a href="#">后端框架</a> <span class="am-badge am-round">8</span></li>
+                        <li><a href="#">感问</a> <span class="am-badge am-round">9</span></li>
+                        <li><a href="#">运维</a> <span class="am-badge am-round">4</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="insp-d-column">
+                <div class="insp-d-header">
+                    <div class="insp-d-title">归档</div>
+                </div>
+                <div class="insp-d-body">
+                    <ul class="insp-d-column-list">
+                        <li><a href="#">2015 年 5 月</a></li>
+                        <li><a href="#">2015 年 4 月</a></li>
+                        <li><a href="#">2015 年 3 月</a></li>
+                        <li><a href="#">2015 年 2 月</a></li>
+                        <li><a href="#">2015 年 1 月</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="insp-d-column">
+                <div class="insp-d-header">
+                    <div class="insp-d-title">友情链接</div>
+                </div>
+                <div class="insp-d-body">
+                    <ul class="insp-d-column-list insp-d-column-list-inline">
+                        <li><a href="#">友链站点 A</a></li>
+                        <li><a href="#">友链站点 B</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="am-kai insp-d-footer">
+    <div class="am-g am-g-fixed">
+        <p>灵感，来自生活的馈赠</p>
+        <p>Recorded from life's inspirations</p>
+        <p>Powered by XOPNS·Database - WebsiteDeveloper</p>
+        <p id="record-number"><a href="http://www.miitbeian.gov.cn/">渝ICP备15005301号</a></p>
+    </div>
+</footer>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/jquery/dist/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/amazeui/dist/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="assets/amazeui/dist/js/amazeui.min.js"></script>
+</body>
+</html>
